@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <style>
+		.number,.act_butt,.c_but{
+			width:30px;
+			margin-top: 3px;
+		}
+		.numbers_block,.actions_block{
+			float:left
+		}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="calculator.js"></script>
+  </head>
+  <body>
+    <form action="" method="post">
+      <textarea name="calc_window" class="calc_window" disabled style="resize:none;width:167px"></textarea><br>
+	  <input type="hidden" name="first_elm" class="first_elm" value="">
+	  <input type="hidden" name="action_elm" class="action_elm" value="">
+	  <input type="hidden" name="second_elm" class="second_elm" value="">
+	  <input type="hidden" name="now_is" class="now_is" value="1">
+      <div class="numbers_block" style="width: 99px;display: inline-block;">
+        <span class="number7"><input type="button" name="num7" class="num7 number" value="7"></span>
+		<span class="number8"><input type="button" name="num8" class="num8 number" value="8"></span>
+		<span class="number9"><input type="button" name="num9" class="num9 number" value="9"></span>
+		<span class="number4"><input type="button" name="num4" class="num4 number" value="4"></span>
+		<span class="number5"><input type="button" name="num5" class="num5 number" value="5"></span>
+		<span class="number6"><input type="button" name="num6" class="num6 number" value="6"></span>
+		<span class="number1"><input type="button" name="num1" class="num1 number" value="1"></span>
+		<span class="number2"><input type="button" name="num2" class="num2 number" value="2"></span>
+		<span class="number3"><input type="button" name="num3" class="num3 number" value="3"></span>
+		<span class="number0"><input type="button" name="num0" class="num0 number" style="width:64px" value="0"></span>
+		<span class="number_circle"><input type="button" name="num0" class="num0 number" value="."></span>
+      </div>
+	  <div class="actions_block" style="width:32px; margin-left: 3px;">
+		<span class="action"><input type="button" name="separate" class="separate act_butt" value="/"></span>
+		<span class="action"><input type="button" name="multiply" class="multiply act_butt" value="*"></span>
+		<span class="action"><input type="button" name="minus" class="minus act_butt" value="-"></span>
+		<span class="action"><input type="button" name="plus" class="plus act_butt" value="+"></span>
+	  </div>
+	  <div class="actions_block" style="width:32px; margin-left: 3px;">
+		<span class="action"><input type="button" name="percent" class="percent act_butt" value="%"></span>
+		<span class="action"><input type="button" name="inverse" class="inverse c_but" value="C"></span>
+		<span class="action"><input type="button" name="result" class="result res_but" value="=" style="height:45px;width:30px;margin-top:3px;"></span>
+	  </div>
+    </form>
+  </body>
+</html>
